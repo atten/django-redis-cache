@@ -27,7 +27,6 @@ class CacheConnectionPool(object):
         ssl=False,
         db=1,
         password=None,
-        parser_class=None,
         unix_socket_path=None,
         connection_pool_class=None,
         connection_pool_class_kwargs=None,
@@ -52,7 +51,6 @@ class CacheConnectionPool(object):
                 'db': db,
                 'password': password,
                 'connection_class': connection_class,
-                'parser_class': parser_class,
                 'socket_timeout': socket_timeout,
             }
 

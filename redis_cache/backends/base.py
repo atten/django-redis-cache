@@ -192,7 +192,6 @@ class BaseRedisCache(BaseCache):
 
         client = redis.Redis(**kwargs)
         kwargs.update(
-            parser_class=self.parser_class,
             connection_pool_class=self.connection_pool_class,
             connection_pool_class_kwargs=self.connection_pool_class_kwargs,
         )
